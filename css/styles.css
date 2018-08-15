@@ -39,7 +39,13 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
 }
+/*keep footer at the bottom*/
+#maincontent {
+	flex: 1;
+}
 #footer {
+	position: absolute;
+	bottom: 0px;
   background-color: #444;
   color: #aaa;
   font-size: 8pt;
