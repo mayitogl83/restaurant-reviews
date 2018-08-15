@@ -21,9 +21,35 @@ a {
 	color: orange;
 	text-decoration: none;
 }
+
+/*keyboard accessibility focus*/
 a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
+}
+#restaurants-list li a:focus, #restaurants-list li a:hover {
+	cursor: pointer;
+	color: #FE7D0B;
+	-moz-box-shadow: 0px 3px 8px rgb(100,100,100);
+  -webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
+  box-shadow: 0px 3px 8px rgb(100,100,100);
+	background-color: #F7F7F7;
+	outline: 0px;
+}
+#map:focus {
+	outline: 2px solid orange;
+}
+.filter-options select:focus, .filter-options select:hover {
+	cursor: pointer;
+	-moz-box-shadow: 0px 3px 8px rgb(100,100,100);
+	-webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
+	box-shadow: 0px 3px 8px rgb(100,100,100);
+  outline: 3px solid orange;
+}
+#restaurants-list li:focus {
+  -moz-box-shadow: 0px 3px 8px rgb(100,100,100);
+  -webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
+  box-shadow: 0px 3px 8px rgb(100,100,100);
 }
 a img{
 	border: none 0px #fff;
