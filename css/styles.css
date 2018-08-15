@@ -76,6 +76,7 @@ nav h1 a {
 
 /* Display list items side by side */
 #breadcrumb li {
+	  font-size: 20px;
     display: inline;
 }
 
