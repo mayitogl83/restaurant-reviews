@@ -1470,3 +1470,68 @@ nav h1 a {
 		padding-right: 0;
 	}
 }
+/*=========breackpoint for deskotp devices=========*/
+@media screen and (min-width:950px){
+  /*=========style for main page=========*/
+	header {
+		position: fixed;
+	  width: 100%;
+  }
+  #maincontent {
+	  width: 100%;
+  }
+	.filter-options {
+		position: fixed;
+		margin-top: 80px;
+		height: 80px;
+		width: 45%;
+	}
+	.filter-options h2 {
+		margin-right: 50px;
+		font-size: 15pt;
+	}
+	.filter-options #neighborhoods-select {
+		margin-left: 15%;
+		width: 170px;
+	}
+	#cuisines-select {
+		width: 120px;
+	}
+  #map-container {
+	  background: blue none repeat scroll 0 0;
+	  height: 90%;
+	  position: fixed;
+	  right: 0;
+	  top: 80px;
+	  width: 55%;
+  }
+  #map {
+	  background-color: #ccc;
+	  height: 100%;
+	  width: 100%;
+  }
+  #footer {
+	  position: absolute;
+	  width: 100%;
+  }
+
+	/*style for restaurant reviews page*/
+  #breadcrumb li {
+		padding-bottom: 20px;
+		font-size: 11pt;
+		height: 40px;
+	}
+	#restaurant-container h1 {
+		font-size: 16pt;
+		text-align: left;
+	}
+	#restaurant-hours td {
+		font-size: 10pt;
+	}
+	#restaurant-hours {
+		margin-right: 125px;
+	}
+	#restaurants-list li{
+		width: 36%;
+	}
+}
