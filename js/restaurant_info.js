@@ -17,7 +17,9 @@ initMap = () => {
       console.error(error);
     } else {
       let ariaForMap = document.getElementById('map');
+      //Add role and label for map
       ariaForMap.setAttribute('role', 'application');
+      ariaForMap.setAttribute('aria-label', 'location');
       self.newMap = L.map('map', {
         center: [restaurant.latlng.lat, restaurant.latlng.lng],
         zoom: 16,
