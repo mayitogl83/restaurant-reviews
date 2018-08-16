@@ -176,6 +176,7 @@ fillBreadcrumb = (restaurant=self.restaurant) => {
   li.innerHTML = restaurant.name;
   breadcrumb.appendChild(li);
   breadcrumb.setAttribute('role', 'navigation');
+  breadcrumb.setAttribute('aria-label', 'Breadcrumb');
 }
 
 /**
