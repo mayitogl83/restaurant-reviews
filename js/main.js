@@ -78,7 +78,9 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  */
 initMap = () => {
   let ariaForMainMap = document.getElementById('map');
+  //add role and label to map
   ariaForMainMap.setAttribute('role', 'application');
+  ariaForMainMap.setAttribute('aria-label', 'location');
   self.newMap = L.map('map', {
         center: [40.722216, -73.987501],
         zoom: 12,
