@@ -87,7 +87,21 @@ initMap = () => {
   }).addTo(newMap);
 
   updateRestaurants();
+
+  updateTabindex();
+
 }
+//avoid focus on map restaurant markers
+  updateTabindex = () => {
+
+      $(window).load(() => {
+      let icons = document.querySelectorAll('.leaflet-marker-icon');
+      icons.forEach(icon => {
+        icon.removeAttribute('tabindex', '0');
+        icon.setAttribute('tabindex', '-1');
+      });
+    })
+  }
 /* window.initMap = () => {
   let loc = {
     lat: 40.722216,
