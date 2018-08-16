@@ -34,6 +34,7 @@ fillNeighborhoodsHTML = (neighborhoods = self.neighborhoods) => {
   const select = document.getElementById('neighborhoods-select');
   //added role and label to the button
   select.setAttribute('role', 'menu');
+  select.setAttribute('aria-label', 'menubar');
   neighborhoods.forEach(neighborhood => {
     const option = document.createElement('option');
     option.innerHTML = neighborhood;
@@ -63,6 +64,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
   const select = document.getElementById('cuisines-select');
   //added role and label to the button
   select.setAttribute('role', 'menu');
+  select.setAttribute('aria-label', 'menubar');
   cuisines.forEach(cuisine => {
     const option = document.createElement('option');
     option.innerHTML = cuisine;
